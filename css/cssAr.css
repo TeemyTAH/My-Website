@@ -1,0 +1,260 @@
+:root{
+    --white:#fff;
+    --bage:#f4ebdf;
+    --brown:#937e74;
+    --green:#22392c;
+    --black:#000;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+body { 
+    direction: rtl;  
+    text-align: right; 
+}
+
+header{
+    background-color:var(--green);
+    width: 100%;
+    padding:1% 5% ;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+}
+
+.header_item h2{
+    color: var(--bage);
+}
+
+.header_item a{
+    text-decoration: none;
+    color: var(--bage);
+    padding:0rem 1rem ;
+    transition: background-color 0.3s ease;
+}
+
+.header_item nav a:hover {
+    background-color: var(--bage);
+}
+
+
+#mode-switcher:checked + .site-container  {
+    --bage: #a99a80;
+    --brown:#d9d1ce;
+}
+
+.site-container{
+    background-color: var(--bage);
+    color: var(--white);
+    transition: all 0.4 ease;
+
+}
+
+.setting {
+    display:flex;
+   justify-content: space-between;
+}
+
+.main-section {
+    background-image: url(../pic/bac.jpg);
+    min-width:100%;
+    min-height: 100vh;
+    display: flex;
+    background-repeat:repeat-x;
+    background-color:var(--bage);
+    background-attachment: fixed;
+}
+
+.content{
+    padding:14em 8em;
+    color:var(--black);
+}
+
+.content h1{
+    color: var(--green);
+    font-size:3em ;
+}
+
+.content h4{
+margin: 0% 0% 10% 0%;
+}
+
+.about-section {
+    background-color:var(--green); 
+    padding: 64px 10%; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.about-section h3 {
+    color:var(--brown);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--brown);
+}
+
+.about-section h3 {
+    color:var(--brown);
+    margin-top: 30px;
+}
+
+.about-section p {
+    color: var(--bage);
+    font-size: 1.1rem;
+}
+
+.jobs-list li {
+    color: var(--bage);
+    margin-bottom: 12px;
+    padding-left: 20px;
+}
+
+.jobs-list li strong {
+    color:var(--white);
+}
+
+.skills-section {
+    padding: 80px 10%;
+    background-color: var(--bage);
+}
+
+.main-title {
+    text-align: center;
+    color: var(--green);
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    gap: 50px;
+}
+
+
+.skill-row.reverse {
+    flex-direction: row-reverse;
+}
+
+
+.skill-image {
+    flex: 1;
+}
+
+.skill-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 3px var(--brown);
+    overflow: hidden;
+    transition: transform 0.7s ease; 
+}
+
+.skill-image img:hover {
+    transform: translateY(-10px); 
+    border-color:var(--brown);
+}
+
+
+.skill-text {
+    flex: 1;
+}
+
+.skill-text h2 {
+    color:var(--brown);
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.skill-text p {
+    color: var(--green);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.projects-section {
+    padding: 64px 5%;
+    background-color:var(--bage);
+    text-align: center;
+}
+
+.section-title {
+    color: var(--green);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px; 
+}
+.project-card {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 15px;
+    width: 300px; 
+    box-shadow: 10px 10px 3px var(--brown);
+    overflow: hidden;
+    transition: transform 0.7s ease; 
+}
+
+.project-card:hover {
+    transform: translateY(-10px); 
+    border-color:var(--brown);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: var(--green);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+footer {
+    background-color: var(--green);
+    color: var(--bage);           
+    text-align: center;
+    padding: 20px 0;          
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: auto; 
+}
+
+#mode-switcher {
+    display: none;
+}
+
+.btn-toggle {
+    cursor: pointer;
+    display: inline-block;
+}
